@@ -1,0 +1,9 @@
+version: '3.7'
+services:
+  web: 
+    image: httpd:latest
+    ports:
+      - 80:80
+    volumes:
+      - ./src:/usr/local/apache2/htdocs
+    
